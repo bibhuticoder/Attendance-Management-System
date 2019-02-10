@@ -18,7 +18,7 @@ class StudentsTableSeeder extends Seeder
         $faculty = DB::table('faculties')->inRandomOrder()->first();
         DB::table('students')->insert([
             'id'   => 1,
-            'full_name' => 'Ram Prasad',
+            'full_name' => 'Rohan Shrestha',
             'faculty' => $faculty->name,
             'faculty_id' => $faculty->id,
             'roll_no' => substr(Carbon::now()->year . '', 1, 3) . substr($faculty->name, 0, 3) . '0'.Student::count(),
@@ -31,7 +31,7 @@ class StudentsTableSeeder extends Seeder
         $faculty = DB::table('faculties')->inRandomOrder()->first();
         DB::table('students')->insert([
             'id'   => 2,
-            'full_name' => 'Hari Bahadur',
+            'full_name' => 'Sagar Dhungel',
             'faculty' => $faculty->name,
             'faculty_id' => $faculty->id,
             'roll_no' => substr(Carbon::now()->year . '', 1, 3) . substr($faculty->name, 0, 3) . '0'.Student::count(),
@@ -43,7 +43,7 @@ class StudentsTableSeeder extends Seeder
         $faculty = DB::table('faculties')->inRandomOrder()->first();
         DB::table('students')->insert([
             'id'   => 3,
-            'full_name' => 'Shyam Prasad Surname',
+            'full_name' => 'Roshan Chapagain',
             'faculty' => $faculty->name,
             'faculty_id' => $faculty->id,
             'roll_no' => substr(Carbon::now()->year . '', 1, 3) . substr($faculty->name, 0, 3) . '0'.Student::count(),
@@ -55,7 +55,7 @@ class StudentsTableSeeder extends Seeder
         $faculty = DB::table('faculties')->inRandomOrder()->first();
         DB::table('students')->insert([
             'id'   => 4,
-            'full_name' => 'Random Prasad Surname',
+            'full_name' => 'Bibhuti Poudyal',
             'faculty' => $faculty->name,
             'faculty_id' => $faculty->id,
             'roll_no' => substr(Carbon::now()->year . '', 1, 3) . substr($faculty->name, 0, 3) . '0'.Student::count(),
